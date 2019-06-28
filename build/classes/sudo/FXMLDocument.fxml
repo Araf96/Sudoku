@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0xff0000ff?>
+
+<AnchorPane id="AnchorPane" minHeight="696.0" prefHeight="700.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sudo.FXMLDocumentController">
+  <children>
+    <AnchorPane id="AnchorPane" layoutX="-448.0" layoutY="408.0" prefHeight="324.0" prefWidth="1148.0" />
+    <ImageView fitHeight="700.0" fitWidth="1107.9617996480972" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@SudokuDay.png" />
+      </image>
+    </ImageView>
+    <HBox layoutX="422.0" layoutY="660.0" opacity="0.31" prefHeight="26.0" prefWidth="209.0">
+      <children>
+        <Button fx:id="Ply" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="70.0" text="Play">
+          <font>
+            <Font name="Script MT Bold" size="14.0" fx:id="x1" />
+          </font>
+          <textFill>
+            <Color blue="0.096" green="0.000" red="0.200" fx:id="x2" />
+          </textFill>
+        </Button>
+        <MenuButton font="$x1" mnemonicParsing="false" popupSide="TOP" prefHeight="26.0" prefWidth="85.0" text="Level" textFill="$x2">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Easy" fx:id="easy" />
+            <MenuItem mnemonicParsing="false" text="Medium" fx:id="medium" />
+            <MenuItem mnemonicParsing="false" text="Hard" fx:id="hard" />
+          </items>
+        </MenuButton>
+        <Button fx:id="Qit" font="$x1" mnemonicParsing="false" onAction="#handlebuttonAction" prefHeight="26.0" prefWidth="70.0" text="Quit" textFill="$x2" />
+      </children>
+    </HBox>
+    <TextField id="" fx:id="nam" alignment="CENTER" depthTest="INHERIT" layoutX="378.0" layoutY="14.0" opacity="0.43" pickOnBounds="false" prefHeight="26.0" prefWidth="200.0" promptText="Player Name" text="" />
+    <Button fx:id="gname" layoutX="590.0" layoutY="14.0" mnemonicParsing="false" onAction="#namme" opacity="0.55" prefHeight="26.0" text="Submit" />
+  </children>
+</AnchorPane>
